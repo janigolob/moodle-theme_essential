@@ -1,0 +1,122 @@
+#page-header {
+    margin: 0;
+    background: #fff !important;
+    border-bottom: none;
+    height: auto;
+    
+    a.logo {
+        height: 60px;
+    }
+}
+
+.navbar-inner {
+    padding: 12px 0 0;
+    border-top: none !important;
+    background-color: #fff !important;
+    border-bottom: 3px solid #1b3d57 !important;	
+}
+
+.nav-collapse {
+    border: none;
+}
+
+.logininfo,
+.logininfo a {
+    color: #000 !important;
+}
+
+
+.navbar {
+    border-right: none;
+    background: none;
+    top: auto;
+    position: static;
+    
+    .nav {
+        & > li {
+                margin: 0 0 -3px 0;
+
+                & > a {
+                        color: #666 !important;
+                        border-left: none;
+                        text-transform: uppercase;
+
+                        &:hover {
+                                background: none !important;
+                                color: #000 !important;
+                        }
+
+                        &.novice {
+                                border-bottom: 3px solid #f06e17;
+                        }
+
+                        &.izobrazevanje {
+                                border-bottom: 3px solid #bf284b;
+                        }
+
+                        &.podpora {
+                                border-bottom: 3px solid #5fc4d0;
+                        }
+
+                        &.skupnosti {
+                                border-bottom: 3px solid #3784bf;
+
+                                &:after {
+                                        border-top: 8px solid #3784bf;
+                                }
+                        }
+
+                        &.projekti {
+                                border-bottom: 3px solid #c6c01c;
+                        }
+
+                        &.zakonodaja {
+                                border-bottom: 3px solid #8eb25b;
+                        }
+                }
+
+                &.selected {
+                        background: #3784bf;
+                        position: relative;
+
+                        a {
+                                color: #fff !important;
+
+                                &:after {
+                                        width: 0;
+                                        height: 0;
+                                        position: absolute;
+                                        content:"";
+                                        display:block;
+                                        border-left: 8px solid transparent;
+                                        border-right: 8px solid transparent;
+
+                                        left: 50%;
+                                        margin: 13px 0 0 -8px;
+                                }
+                        }
+                }
+        }
+    }
+}
+
+
+@media (min-width: 770px) {
+	#page-header {
+		.row-fluid {
+			.span1 {
+				width: 15%;
+			}
+			
+			.span11 {
+				width: 80%;
+			}
+			
+			.logininfo {
+				width: 70%;
+				float: left;
+			}
+		}
+	}
+}
+

@@ -60,7 +60,33 @@ if (empty($PAGE->layout_options['nofooter'])) {
                 <?php echo $OUTPUT->standard_footer_html(); ?>
             </div>
         </div>
+
+        <hr class="line">
+        <div class="container-fluid footer-row logos">
+            <div class="logo">
+                <a href="#">
+                    <img src="http://sio.si/wp-content/themes/sio/images/arnes-logo.png" alt="Arnes logo">
+                </a>
+            </div>
+            <div class="logo">
+                <a href="#">
+                    <img src="http://sio.si/wp-content/themes/sio/images/zavod-republike-slovenije-logo.png" alt="Arnes logo">
+                </a>
+            </div>
+            <div class="logo">
+                <a href="#">
+                    <img src="http://sio.si/wp-content/themes/sio/images/ministrstvo-logo.png" alt="Arnes logo">
+                </a>
+            </div>
+            <div class="logo">
+                <a href="#">
+                    <img src="http://sio.si/wp-content/themes/sio/images/nalozba-v-vaso-prihodnost-logo.png" alt="Arnes logo">
+                </a>
+            </div>
+        </div>
+
     </footer>
+
     <a href="#top" class="back-to-top" ><i class="fa fa-angle-up "></i></a>
 <?php } ?>
 

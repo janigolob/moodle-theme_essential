@@ -51,6 +51,8 @@ if ((get_config('theme_essential', 'enablealternativethemecolors1')) ||
 
 $THEME->sheets[] = 'custom';
 
+$THEME->sheets[] = 'sio';
+
 $THEME->supportscssoptimisation = false;
 
 if (intval($CFG->version) >= 2013111800) {

@@ -1,0 +1,33 @@
+body {
+    font-size: 90%;
+}
+
+h1 {
+    font-size: 180%;
+}
+
+h2 {
+    font-size: 160%;
+}
+
+h3 {
+    font-size: 140%;
+}
+
+.block {
+    .header .title h2:before {
+        font-size: 100%;
+    }
+}
+
+label, input, button, select, textarea {
+    font-size: 100%;
+}
+
+.navbar {
+    .nav {
+        a {
+            font-size: 80%;
+        }
+    }    
+}

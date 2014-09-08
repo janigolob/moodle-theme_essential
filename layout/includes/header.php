@@ -40,6 +40,63 @@ echo $OUTPUT->doctype() ?>
     <!-- Start Analytics -->
     <?php require_once(dirname(__FILE__) . '/analytics.php'); ?>
     <!-- End Analytics -->
+
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <link rel="stylesheet" type="text/css" href="http://assets.cookieconsent.silktide.com/current/style.min.css"/>
+    <script type="text/javascript" src="http://assets.cookieconsent.silktide.com/current/plugin.min.js"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    cc.initialise({
+        cookies: {
+            analytics: {},
+            necessary: {}
+        },
+        settings: {
+            consenttype: "explicit",
+            bannerPosition: "bottom",
+            tagPosition: "bottom-right",
+            disableallsites: true
+        },
+        strings: {
+            analyticsDefaultTitle: 'Google Analytics',
+            analyticsDefaultDescription: 'Spremljanje obiskov strani.',
+            necessaryDefaultTitle: 'Sejni piškotki',
+            necessaryDefaultDescription: 'Nekateri piškotki na tej strani so nujno potrebni za njeno delovanje in jih ni mogoče onemogočiti.',
+            defaultTitle: 'Piškotek',
+            closeWindow: 'Zapri',
+            learnMore: 'Več',
+            defaultDescription: 'Sejni piškotek',
+            notificationTitle: 'Delovanje strani bo izboljšano, če omogočite piškotke.',
+            notificationTitleImplicit: 'Za optimalno delovanje strani uporabljamo piškotke.',
+            customCookie: 'Ta stran uporablja prirejen piškotek, ki potrebuje odobritev.',
+            seeDetails: 'podrobnosti',
+            seeDetailsImplicit: 'spremeni nastavitve',
+            hideDetails: 'skrij nastavitve',
+            allowCookies: 'Dovoli piškotke',
+            allowCookiesImplicit: 'Zapri',
+            allowForAllSites: 'Omogoči piškotke na vseh straneh',
+            savePreference: 'Shrani nastavitve',
+            saveForAllSites: 'Shrani nastavitve za vse strani',
+            privacySettings: 'Nastavitve zasebnosti',
+            privacySettingsDialogTitleA: 'Nastavitve zasebnosti',
+            privacySettingsDialogTitleB: 'za to spletno stran',
+            preferenceConsent: 'Soglašam',
+            preferenceDecline: 'Zavračam',
+            notUsingCookies: 'Ta stran ne uporablja piškotkov.',
+            preferenceUseGlobal: 'Uporabi globalno nastavitev',
+            changeForAllSitesLink: 'Shrani nastavitve za vse strani',
+            privacySettingsDialogSubtitle: 'Nekatere funkcije te strani potrebujejo vaše dovoljenje, da si vas zapomnijo.',
+            allSitesSettingsDialogTitleA: 'Nastavitve zasebnost',
+            allSitesSettingsDialogTitleB: 'za vse spletne strani',
+            preferenceAsk: 'Vprašaj me vsakič',
+            backToSiteSettings: 'Nazaj na nastavitve spletne strani',
+            preferenceAlways: 'Vedno dovoli',
+            preferenceNever: 'Vedno zavrni'
+        }
+    });
+    // ]]>
+    </script>
+    <!-- End Cookie Consent plugin -->
 </head>
 
 <body <?php echo $OUTPUT->body_attributes($bodyclasses); ?>>
@@ -117,45 +174,47 @@ echo $OUTPUT->doctype() ?>
             <?php } ?>
             </div>
         </div>
-    </div>
-    <nav role="navigation">
-        <div class="navbar<?php echo ($oldnavbar) ? ' oldnavbar' : ''; ?>">
-            <div class="container-fluid navbar-inner">
-                <div class="row-fluid">
-                    <div class="custommenus pull-left">
-                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </a>
-                        <?php echo theme_essential_get_title('navbar'); ?>
-                        <div class="nav-collapse collapse pull-left">
-                            <div id="custom_menu_language">
-                                <?php echo $OUTPUT->custom_menu_language(); ?>
-                            </div>
-                            <div id="custom_menu_courses">
-                                <?php echo $OUTPUT->custom_menu_courses(); ?>
-                            </div>
-                            <?php if ($colourswitcher) { ?>
-                                <div id="custom_menu_themecolours">
-                                    <?php echo $OUTPUT->custom_menu_themecolours(); ?>
+
+        <nav role="navigation">
+            <div class="navbar<?php echo ($oldnavbar) ? ' oldnavbar' : ''; ?>">
+                <div class="navbar-inner">
+                    <div class="row-fluid container-fluid">
+                        <div class="custommenus pull-left">
+                            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </a>
+                            <div class="nav-collapse collapse pull-left">
+                                <?php require_once(dirname(__FILE__).'/menu.php'); ?>
+
+                                <div id="custom_menu_language">
+                                    <?php echo $OUTPUT->custom_menu_language(); ?>
                                 </div>
-                            <?php } ?>
-                            <div id="custom_menu">
-                                <?php echo $OUTPUT->custom_menu(); ?>
+                                <div id="custom_menu_courses">
+                                    <?php echo $OUTPUT->custom_menu_courses(); ?>
+                                </div>
+                                <?php if ($colourswitcher) { ?>
+                                    <div id="custom_menu_themecolours">
+                                        <?php echo $OUTPUT->custom_menu_themecolours(); ?>
+                                    </div>
+                                <?php } ?>
+                                <div id="custom_menu">
+                                    <?php echo $OUTPUT->custom_menu(); ?>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="pull-right">
-                        <div class="usermenu">
-                            <?php echo $OUTPUT->custom_menu_user(); ?>
-                        </div>
-                        <div class="messagemenu">
-                            <?php echo $OUTPUT->custom_menu_messages(); ?>
+                        <div class="pull-right">
+                            <div class="usermenu">
+                                <?php echo $OUTPUT->custom_menu_user(); ?>
+                            </div>
+                            <div class="messagemenu">
+                                <?php echo $OUTPUT->custom_menu_messages(); ?>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 </header>
