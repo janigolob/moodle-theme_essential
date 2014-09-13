@@ -189,6 +189,8 @@ $THEME->layouts = array(
 );
 
 $THEME->javascripts_footer[] = 'coloursswitcher';
+$THEME->javascripts_footer[] = 'jquery.mobilemenu.min';
+$THEME->javascripts_footer[] = 'javascript';
 
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->csspostprocess = 'theme_essential_process_css';
