@@ -1,13 +1,15 @@
-body {
-  font-family: Helvetica; }
+.container-fluid {
+  max-width: 1160px; }
 
 #page-header {
+  padding: 1.65em 0 0;
   margin: 0;
   background: #fff !important;
   border-bottom: none;
   height: auto; }
   #page-header a.logo {
-    height: 60px; }
+    height: 60px;
+    margin: 0; }
 
 .navbar-inner {
   padding: 12px 0 0;
@@ -76,7 +78,14 @@ body {
     float: left; } }
 body {
   border-top: none;
-  background: #e9e9e9; }
+  background: #e9e9e9;
+  font-family: Helvetica; }
+
+#page {
+  padding: 1em 0 0; }
+
+section[role=main-content] {
+  padding: 0 1em; }
 
 .course-content {
   background: #fff; }
@@ -104,6 +113,9 @@ body {
     margin: 10px 0 0;
     clear: both; }
 
+*, p {
+  font-family: "PT Sans",Helvetica,Arial,sans-serif; }
+
 body {
   font-size: 90%; }
 
@@ -123,6 +135,6 @@ label, input, button, select, textarea {
   font-size: 100%; }
 
 .navbar .nav a {
-  font-size: 80%; }
+  font-size: 90%; }
 
 /*# sourceMappingURL=sio.css.map */
