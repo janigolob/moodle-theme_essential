@@ -22,14 +22,41 @@ section[role=main-content] {
 }
 
 .message {
-	.messagearea {
-		float: none;
-		width: 100%;
-		border: none;
-	}
-	
-	.contactselector {
-		width: 100%;
-		float: none;
-	}
+    .messagearea {
+        float: none;
+        width: 100%;
+        border: none;
+    }
+
+    .contactselector {
+        width: 100%;
+        float: none;
+    }
+}
+
+#page-content {
+    .block {
+        padding: 0;
+        
+        .header {
+            padding: 0.5em 0 0.2em 0.5em;
+            background: #1B3D57;
+            
+            .title {
+                border: none;
+                
+                h2 {
+                    color: #fff;
+                    
+                    &:before {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        
+        .content {
+            padding: .5em 1em;
+        }
+    }
 }
