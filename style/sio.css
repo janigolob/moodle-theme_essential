@@ -167,6 +167,14 @@ body {
 *, p {
   font-family: "PT Sans",Helvetica,Arial,sans-serif; }
 
+#essentialCarousel h4 {
+  font-family: "Nimbus Sans L";
+  font-size: 165%;
+  font-weight: 400; }
+#essentialCarousel p {
+  font-family: "Nimbus Sans L";
+  font-weight: 400; }
+
 body {
   font-size: 90%; }
 
@@ -187,5 +195,27 @@ label, input, button, select, textarea {
 
 .navbar .nav a {
   font-size: 90%; }
+
+#essentialCarousel.carousel .carousel-inner .carousel-caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  background: none; }
+  #essentialCarousel.carousel .carousel-inner .carousel-caption h4 {
+    padding: .83em .7em;
+    background: #3784BF;
+    color: #fff;
+    line-height: 30px; }
+  #essentialCarousel.carousel .carousel-inner .carousel-caption p {
+    position: absolute;
+    bottom: 0;
+    background: rgba(220, 220, 220, 0.9);
+    color: #222;
+    padding: 1.2em; }
+#essentialCarousel .carousel-indicators {
+  display: none; }
 
 /*# sourceMappingURL=sio.css.map */
