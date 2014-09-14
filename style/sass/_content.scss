@@ -4,21 +4,13 @@ body {
     font-family: Helvetica;
 }
 
-#page {
-    padding: 1em 0 0;
-}
-
-section[role=main-content] {
-    padding: 0 1em;
-}
-
 .course-content {
     background: #fff;
 }
 
 .generalbox {
-	background: #fff;
-	padding: 12px;
+    background: #fff;
+    padding: 12px;
 }
 
 .message {
@@ -34,29 +26,62 @@ section[role=main-content] {
     }
 }
 
-#page-content {
-    .block {
-        padding: 0;
-        
-        .header {
-            padding: 0.5em 0 0.2em 0.5em;
-            background: #1B3D57;
+#page {
+    padding: 1em 0 0;
+    background: none;
+
+    #page-content {
+        #region-main {
+            padding: .5em 1em;
             
-            .title {
-                border: none;
-                
-                h2 {
-                    color: #fff;
-                    
-                    &:before {
+            &.span9 {
+                width: 78.359%;
+            }
+            
+            
+        }
+        
+        aside {
+            &.span3 {
+                width: 19.0769%;
+            }
+        }
+
+        div[role="main"] {
+            padding: .5em 1em;
+        }
+
+        .block {
+            padding: 0;
+
+            .header {
+                padding: 0.5em 0 0.2em 0.5em;
+                background: #1B3D57;
+
+                .title {
+                    border: none;
+
+                    h2 {
                         color: #fff;
+
+                        &:before {
+                            color: #fff;
+                        }
                     }
                 }
             }
+
+            .content {
+                padding: .5em 1em;
+            }
         }
-        
-        .content {
-            padding: .5em 1em;
+    }
+}
+
+.block_settings {
+    .block_tree {
+        .tree_item {
+            padding-left: 0;
         }
     }
 }
