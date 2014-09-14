@@ -31,14 +31,20 @@ body {
     background: none;
 
     #page-content {
+        a {
+            color: #3784BF !important;
+        }
+
+        a:hover {
+            text-decoration: underline !important;
+        }
+        
         #region-main {
             padding: .5em 1em;
             
             &.span9 {
                 width: 78.359%;
             }
-            
-            
         }
         
         aside {

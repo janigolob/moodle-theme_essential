@@ -124,6 +124,10 @@ body {
 #page {
   padding: 1em 0 0;
   background: none; }
+  #page #page-content a {
+    color: #3784BF !important; }
+  #page #page-content a:hover {
+    text-decoration: underline !important; }
   #page #page-content #region-main {
     padding: .5em 1em; }
     #page #page-content #region-main.span9 {
