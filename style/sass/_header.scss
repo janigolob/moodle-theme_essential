@@ -16,7 +16,12 @@
     padding: 12px 0 0;
     border-top: none !important;
     background-color: #fff !important;
-    border-bottom: 3px solid #1b3d57 !important;	
+    border-bottom: 3px solid #1b3d57 !important;
+    
+    .dropdown-menu > li > a {
+        min-width: 12em;
+        white-space: normal;
+    }
 }
 
 .nav-collapse {

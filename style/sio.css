@@ -17,6 +17,9 @@
   border-top: none !important;
   background-color: #fff !important;
   border-bottom: 3px solid #1b3d57 !important; }
+  .navbar-inner .dropdown-menu > li > a {
+    min-width: 12em;
+    white-space: normal; }
 
 .nav-collapse {
   border: none; }
@@ -215,6 +218,8 @@ label, input, button, select, textarea {
     background: rgba(220, 220, 220, 0.9);
     color: #222;
     padding: 1.2em; }
+  #essentialCarousel.carousel .carousel-inner .carousel-caption .carousel-caption-inner {
+    max-width: none; }
 #essentialCarousel .carousel-indicators {
   display: none; }
 
