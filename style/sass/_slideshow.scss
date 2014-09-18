@@ -27,6 +27,10 @@
         .carousel-inner {
             .item {
                 height: 375px;
+                
+                &:hover {
+                    height: 375px;
+                }
             }
             
             .carousel-caption {

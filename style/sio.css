@@ -130,10 +130,10 @@ body {
 #page {
   padding: 1em 0 0;
   background: none; }
-  #page a {
+  #page #page-content a {
     color: #3784BF; }
-  #page a:hover {
-    text-decoration: underline; }
+    #page #page-content a:hover {
+      text-decoration: underline; }
   #page #page-content #region-main {
     padding: .5em 1em; }
     #page #page-content #region-main.span9 {
@@ -159,6 +159,10 @@ body {
 
 .block {
   padding: 0; }
+  .block a {
+    color: #3784BF; }
+    .block a:hover {
+      text-decoration: underline; }
   .block .header {
     padding: 0.5em 0 0.2em 0.5em;
     background: #1B3D57; }
@@ -230,6 +234,8 @@ label, input, button, select, textarea {
 
 #essentialCarousel.carousel .carousel-inner .item {
   height: 375px; }
+  #essentialCarousel.carousel .carousel-inner .item:hover {
+    height: 375px; }
 #essentialCarousel.carousel .carousel-inner .carousel-caption {
   position: absolute;
   top: 0;
