@@ -1,6 +1,9 @@
 .container-fluid {
   max-width: 1160px; }
 
+.fa-f07c:before {
+  content: "\f07c"; }
+
 #page-header {
   padding: 1.65em 0 0;
   margin: 0;
@@ -128,9 +131,9 @@ body {
   padding: 1em 0 0;
   background: none; }
   #page #page-content a {
-    color: #3784BF !important; }
+    color: #3784BF; }
   #page #page-content a:hover {
-    text-decoration: underline !important; }
+    text-decoration: underline; }
   #page #page-content #region-main {
     padding: .5em 1em; }
     #page #page-content #region-main.span9 {
@@ -152,6 +155,17 @@ body {
             color: #fff; }
     #page #page-content .block .content {
       padding: .5em 1em; }
+  #page #page-content .course_category_tree .category {
+    border-bottom-width: 1px; }
+    #page #page-content .course_category_tree .category .categoryname a .fa {
+      font-size: 100%;
+      width: auto; }
+    #page #page-content .course_category_tree .category .categoryname a .fa-f07c:before {
+      font-size: 100%; }
+    #page #page-content .course_category_tree .category .categoryname a:hover {
+      color: #fff; }
+  #page #page-content .menu a:hover span {
+    color: #fff; }
 
 .block_settings .block_tree .tree_item {
   padding-left: 0; }

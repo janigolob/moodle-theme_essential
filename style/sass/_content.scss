@@ -32,11 +32,11 @@ body {
 
     #page-content {
         a {
-            color: #3784BF !important;
+            color: #3784BF;
         }
 
         a:hover {
-            text-decoration: underline !important;
+            text-decoration: underline;
         }
         
         #region-main {
@@ -79,6 +79,38 @@ body {
 
             .content {
                 padding: .5em 1em;
+            }
+        }
+        
+        .course_category_tree {
+            .category {
+                border-bottom-width: 1px;
+                
+                .categoryname {
+                    a {
+                        .fa {
+                            font-size: 100%;
+                            width: auto;
+                        }
+                        
+                        .fa-f07c {
+                            &:before {
+                                font-size: 100%;
+                            }
+                        }
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+        .menu {
+            a:hover span {
+                color: #fff;
             }
         }
     }
