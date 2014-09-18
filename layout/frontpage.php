@@ -129,7 +129,7 @@ require_once(dirname(__FILE__) . '/includes/header.php');?>
         <div id="page-content" class="row-fluid">
             <section id="<?php echo $regionbsid; ?>">
                 <?php if (theme_essential_get_setting('frontpageblocks')) { ?>
-                <section id="region-main" class="span9 pull-right">
+                <section id="region-main" class="span9 pull-left">
                     <?php } else { ?>
                     <section id="region-main" class="span9 desktop-first-column">
                         <?php } ?>
@@ -141,7 +141,7 @@ require_once(dirname(__FILE__) . '/includes/header.php');?>
                     </section>
                     <?php
                     if (theme_essential_get_setting('frontpageblocks')) {
-                        echo $OUTPUT->blocks('side-pre', 'span3 desktop-first-column');
+                        echo $OUTPUT->blocks('side-pre', 'span3 desktop-first-column pull-right');
                     } else {
                         echo $OUTPUT->blocks('side-pre', 'span3 pull-right');
                     }
