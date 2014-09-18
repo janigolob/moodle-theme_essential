@@ -130,9 +130,9 @@ body {
 #page {
   padding: 1em 0 0;
   background: none; }
-  #page #page-content a {
+  #page a {
     color: #3784BF; }
-  #page #page-content a:hover {
+  #page a:hover {
     text-decoration: underline; }
   #page #page-content #region-main {
     padding: .5em 1em; }
@@ -142,19 +142,6 @@ body {
     width: 19.0769%; }
   #page #page-content div[role="main"] {
     padding: .5em 1em; }
-  #page #page-content .block {
-    padding: 0; }
-    #page #page-content .block .header {
-      padding: 0.5em 0 0.2em 0.5em;
-      background: #1B3D57; }
-      #page #page-content .block .header .title {
-        border: none; }
-        #page #page-content .block .header .title h2 {
-          color: #fff; }
-          #page #page-content .block .header .title h2:before {
-            color: #fff; }
-    #page #page-content .block .content {
-      padding: .5em 1em; }
   #page #page-content .course_category_tree .category {
     border-bottom-width: 1px; }
     #page #page-content .course_category_tree .category .categoryname a .fa {
@@ -169,6 +156,20 @@ body {
 
 .block_settings .block_tree .tree_item {
   padding-left: 0; }
+
+.block {
+  padding: 0; }
+  .block .header {
+    padding: 0.5em 0 0.2em 0.5em;
+    background: #1B3D57; }
+    .block .header .title {
+      border: none; }
+      .block .header .title h2 {
+        color: #fff; }
+        .block .header .title h2:before {
+          color: #fff; }
+  .block .content {
+    padding: .5em 1em; }
 
 #page-footer {
   background: #1B3D58;
@@ -213,6 +214,22 @@ label, input, button, select, textarea {
 .navbar .nav a {
   font-size: 90%; }
 
+.slideshow {
+  height: 375px;
+  margin: 0 0 24px;
+  overflow: hidden; }
+  .slideshow .pull-left {
+    float: left;
+    height: 100%;
+    width: 25%; }
+    .slideshow .pull-left #block-region-slider-left {
+      margin-left: 0; }
+  .slideshow .pull-right {
+    width: 72.72%;
+    height: 375px; }
+
+#essentialCarousel.carousel .carousel-inner .item {
+  height: 375px; }
 #essentialCarousel.carousel .carousel-inner .carousel-caption {
   position: absolute;
   top: 0;

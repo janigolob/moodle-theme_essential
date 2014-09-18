@@ -29,15 +29,16 @@ body {
 #page {
     padding: 1em 0 0;
     background: none;
+    
+    a {
+        color: #3784BF;
+    }
 
+    a:hover {
+        text-decoration: underline;
+    }
+    
     #page-content {
-        a {
-            color: #3784BF;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
         
         #region-main {
             padding: .5em 1em;
@@ -57,31 +58,6 @@ body {
             padding: .5em 1em;
         }
 
-        .block {
-            padding: 0;
-
-            .header {
-                padding: 0.5em 0 0.2em 0.5em;
-                background: #1B3D57;
-
-                .title {
-                    border: none;
-
-                    h2 {
-                        color: #fff;
-
-                        &:before {
-                            color: #fff;
-                        }
-                    }
-                }
-            }
-
-            .content {
-                padding: .5em 1em;
-            }
-        }
-        
         .course_category_tree {
             .category {
                 border-bottom-width: 1px;
@@ -121,5 +97,30 @@ body {
         .tree_item {
             padding-left: 0;
         }
+    }
+}
+
+.block {
+    padding: 0;
+
+    .header {
+        padding: 0.5em 0 0.2em 0.5em;
+        background: #1B3D57;
+
+        .title {
+            border: none;
+
+            h2 {
+                color: #fff;
+
+                &:before {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .content {
+        padding: .5em 1em;
     }
 }

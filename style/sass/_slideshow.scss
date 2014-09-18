@@ -1,6 +1,34 @@
+.slideshow {
+    height: 375px;
+    margin: 0 0 24px;
+    overflow: hidden;
+    
+    .pull-left {
+        float: left;
+        height: 100%;
+        width: 25%;
+        
+        #block-region-slider-left {
+            margin-left: 0;
+        }
+    }
+    
+    .pull-right {
+        width: 72.72%;
+        height: 375px;
+    }
+    
+}
+
 #essentialCarousel {
+    
     &.carousel {
+        
         .carousel-inner {
+            .item {
+                height: 375px;
+            }
+            
             .carousel-caption {
                 position: absolute;
                 top: 0;

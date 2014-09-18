@@ -28,17 +28,24 @@ require_once(dirname(__FILE__) . '/includes/header.php');?>
 
 <div id="page" class="container-fluid">
     <section class="slideshow">
+        <div class="pull-left">
+            <?php echo $OUTPUT->blocks('slider-left', 'span3 desktop-first-column'); ?>
+        </div>
+        
         <!-- Start Slideshow -->
-        <?php
-        if (theme_essential_get_setting('toggleslideshow') == 1) {
-            require_once(dirname(__FILE__) . '/includes/slideshow.php');
-        } else if (theme_essential_get_setting('toggleslideshow') == 2 && !isloggedin()) {
-            require_once(dirname(__FILE__) . '/includes/slideshow.php');
-        } else if (theme_essential_get_setting('toggleslideshow') == 3 && isloggedin()) {
-            require_once(dirname(__FILE__) . '/includes/slideshow.php');
-        }
-        ?>
+        <div class="slider pull-right">
+            <?php
+            if (theme_essential_get_setting('toggleslideshow') == 1) {
+                require_once(dirname(__FILE__) . '/includes/slideshow.php');
+            } else if (theme_essential_get_setting('toggleslideshow') == 2 && !isloggedin()) {
+                require_once(dirname(__FILE__) . '/includes/slideshow.php');
+            } else if (theme_essential_get_setting('toggleslideshow') == 3 && isloggedin()) {
+                require_once(dirname(__FILE__) . '/includes/slideshow.php');
+            }
+            ?>
+        </div>
         <!-- End Slideshow -->
+        
     </section>
 
     <section role="main-content">
