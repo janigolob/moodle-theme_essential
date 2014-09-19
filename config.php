@@ -78,7 +78,7 @@ $THEME->layouts = array(
     // Front page.
     'frontpage' => array(
         'file' => 'frontpage.php',
-        'regions' => array_merge(array('slider-left', 'side-pre', 'footer-left', 'footer-middle', 'footer-right', 'hidden-dock'), $addregions),
+        'regions' => array_merge(array('slider-right', 'side-pre', 'footer-left', 'footer-middle', 'footer-right', 'hidden-dock'), $addregions),
         'defaultregion' => 'side-pre',
     ),
     // Standard layout with blocks, this is recommended for most pages with general information.

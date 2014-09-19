@@ -28,12 +28,12 @@ require_once(dirname(__FILE__) . '/includes/header.php');?>
 
 <div id="page" class="container-fluid">
     <section class="slideshow">
-        <div class="pull-left">
-            <?php echo $OUTPUT->blocks('slider-left', 'span3 desktop-first-column'); ?>
+        <div class="pull-right">
+            <?php echo $OUTPUT->blocks('slider-right', 'span3 desktop-first-column'); ?>
         </div>
         
         <!-- Start Slideshow -->
-        <div class="slider pull-right">
+        <div class="slider pull-left">
             <?php
             if (theme_essential_get_setting('toggleslideshow') == 1) {
                 require_once(dirname(__FILE__) . '/includes/slideshow.php');

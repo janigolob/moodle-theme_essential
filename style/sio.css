@@ -169,7 +169,9 @@ body {
     .block .header .title {
       border: none; }
       .block .header .title h2 {
-        color: #fff; }
+        color: #fff;
+        font-size: 100%;
+        margin-bottom: 0; }
         .block .header .title h2:before {
           color: #fff; }
   .block .content {
@@ -222,13 +224,12 @@ label, input, button, select, textarea {
   height: 375px;
   margin: 0 0 24px;
   overflow: hidden; }
-  .slideshow .pull-left {
-    float: left;
+  .slideshow .pull-right {
     height: 100%;
     width: 25%; }
-    .slideshow .pull-left #block-region-slider-left {
+    .slideshow .pull-right #block-region-slider-right {
       margin-left: 0; }
-  .slideshow .pull-right {
+  .slideshow .pull-left {
     width: 72.72%;
     height: 375px; }
 

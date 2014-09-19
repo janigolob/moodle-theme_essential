@@ -3,17 +3,16 @@
     margin: 0 0 24px;
     overflow: hidden;
     
-    .pull-left {
-        float: left;
+    .pull-right {
         height: 100%;
         width: 25%;
         
-        #block-region-slider-left {
+        #block-region-slider-right {
             margin-left: 0;
         }
     }
     
-    .pull-right {
+    .pull-left {
         width: 72.72%;
         height: 375px;
     }
