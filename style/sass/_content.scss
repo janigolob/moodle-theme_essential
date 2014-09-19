@@ -118,12 +118,26 @@ body {
             border: none;
 
             h2 {
+                position: relative;
                 color: #fff;
                 font-size: 100%;
                 margin-bottom: 0;
 
                 &:before {
                     color: #fff;
+                }
+                
+                &:after {
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+                    left: 5%;
+                    margin: 3px 0 0 -8px;
+                    border-top: 8px solid #1b3d57;
                 }
             }
         }
