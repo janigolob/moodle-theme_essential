@@ -1,20 +1,13 @@
 #page-site-index {
     
-    #page {
-        #page-content {
-            #region-main {
-                &.span9 {
-                    width: 72.72%;
-                }
+    .span9 {
+        width: 72.72%;
+        margin-left: 0;
+    }
                 
-            }
-            
-            aside {
-                &.span3 {
-                    width: 270px;
-                }
-            }
-        }
+    .span3 {
+        width: 270px;
+        margin: 0;
     }
     
 }
