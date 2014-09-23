@@ -119,6 +119,7 @@ body {
 
             h2 {
                 position: relative;
+                z-index: 1;
                 color: #fff;
                 font-size: 100%;
                 margin-bottom: 0;
@@ -139,6 +140,11 @@ body {
                     margin: 3px 0 0 -8px;
                     border-top: 8px solid #1b3d57;
                 }
+            }
+            
+            .block_action {
+                position: relative;
+                z-index: 9999;
             }
         }
     }

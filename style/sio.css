@@ -170,6 +170,7 @@ body {
       border: none; }
       .block .header .title h2 {
         position: relative;
+        z-index: 1;
         color: #fff;
         font-size: 100%;
         margin-bottom: 0; }
@@ -186,6 +187,9 @@ body {
           left: 5%;
           margin: 3px 0 0 -8px;
           border-top: 8px solid #1b3d57; }
+      .block .header .title .block_action {
+        position: relative;
+        z-index: 9999; }
   .block .content {
     padding: .5em 1em; }
 
@@ -276,7 +280,7 @@ label, input, button, select, textarea {
   width: 72.72%;
   margin-left: 0; }
 #page-site-index .span3 {
-  width: 270px;
+  width: 290px;
   margin: 0; }
 
 #page-course-view-weeks #page #page-content aside.span3 {
