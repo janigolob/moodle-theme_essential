@@ -23,6 +23,8 @@
   .navbar-inner .dropdown-menu > li > a {
     min-width: 12em;
     white-space: normal; }
+  .navbar-inner .messagemenu .nav > li > a {
+    padding: 10px 5px 10px 0px; }
 
 .nav-collapse {
   border: none; }
