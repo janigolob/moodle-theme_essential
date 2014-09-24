@@ -189,7 +189,7 @@ body {
           border-top: 8px solid #1b3d57; }
       .block .header .title .block_action {
         position: relative;
-        z-index: 9999; }
+        z-index: 2; }
   .block .content {
     padding: .5em 1em; }
 
