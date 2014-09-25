@@ -136,12 +136,16 @@ body {
     color: #3784BF; }
     #page #page-content a:hover {
       text-decoration: underline; }
+  #page #page-content .span9 {
+    width: 78.359%; }
   #page #page-content #region-main {
     padding: .5em 1em; }
     #page #page-content #region-main.span9 {
       width: 78.359%; }
   #page #page-content aside.span3 {
-    width: 19.0769%; }
+    width: 19.0769%;
+    margin: 0;
+    float: right; }
   #page #page-content div[role="main"] {
     padding: .5em 1em; }
   #page #page-content .course_category_tree .category {
@@ -195,6 +199,15 @@ body {
   .block .content {
     padding: .5em 1em; }
 
+@media (max-width: 767px) {
+  #page #page-content .span9 {
+    width: 100%; }
+  #page #page-content #region-main.span9 {
+    width: 100%; }
+  #page #page-content #region-main.span8 {
+    width: 100%; }
+  #page #page-content aside.span3 {
+    width: 100%; } }
 #page-footer {
   background: #1B3D58;
   border: none; }
@@ -285,9 +298,23 @@ label, input, button, select, textarea {
   width: 290px;
   margin: 0; }
 
+@media (max-width: 1100px) {
+  #page-site-index .span9 {
+    width: 100%;
+    margin-left: 0; }
+  #page-site-index .span3 {
+    width: 100%;
+    margin: 0; }
+
+  #middle-blocks {
+    display: none; } }
 #page-course-view-weeks #page #page-content aside.span3 {
-  width: 270px;
+  width: 19.0769%;
   margin: 0;
   float: right; }
+
+@media (max-width: 767px) {
+  #page-course-view-weeks #page #page-content aside.span3 {
+    width: 100%; } }
 
 /*# sourceMappingURL=sio.css.map */

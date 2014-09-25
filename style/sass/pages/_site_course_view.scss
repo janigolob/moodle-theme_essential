@@ -3,9 +3,23 @@
         #page-content {
             aside {
                 &.span3 {
-                    width: 270px;
+                    width: 19.0769%;
                     margin: 0;
                     float: right;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #page-course-view-weeks {
+        #page {
+            #page-content {
+                aside {
+                    &.span3 {
+                        width: 100%;
+                    }
                 }
             }
         }
