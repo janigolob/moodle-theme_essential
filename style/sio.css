@@ -170,7 +170,7 @@ body {
     .block a:hover {
       text-decoration: underline; }
   .block .header {
-    padding: 0.5em 0 0.2em 0.5em;
+    padding: 0.2em 0 0.2em 0.5em;
     background: #1B3D57; }
     .block .header .title {
       border: none; }
@@ -191,11 +191,13 @@ body {
           border-left: 8px solid transparent;
           border-right: 8px solid transparent;
           left: 5%;
-          margin: 3px 0 0 -8px;
+          margin: 2px 0 0 -8px;
           border-top: 8px solid #1b3d57; }
       .block .header .title .block_action {
         position: relative;
         z-index: 2; }
+    .block .header .commands {
+      display: none; }
   .block .content {
     padding: .5em 1em; }
 
@@ -291,12 +293,16 @@ label, input, button, select, textarea {
 #essentialCarousel .carousel-indicators {
   display: none; }
 
+#page-site-index #page-content {
+  margin-top: 24px; }
 #page-site-index .span9 {
   width: 72.72%;
   margin-left: 0; }
 #page-site-index .span3 {
   width: 290px;
   margin: 0; }
+#page-site-index #middle-blocks {
+  display: none; }
 
 @media (max-width: 1100px) {
   #page-site-index .span9 {
@@ -304,10 +310,7 @@ label, input, button, select, textarea {
     margin-left: 0; }
   #page-site-index .span3 {
     width: 100%;
-    margin: 0; }
-
-  #middle-blocks {
-    display: none; } }
+    margin: 0; } }
 #page-course-view-weeks #page #page-content aside.span3 {
   width: 19.0769%;
   margin: 0;
