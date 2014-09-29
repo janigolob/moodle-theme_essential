@@ -195,7 +195,7 @@ $string['loggedinfrom'] = 'Logged in from ';
 
 $string['mygrades'] = 'My grades';
 $string['coursegrades'] = 'Course grades';
-$string['mycerts'] = 'Certificates';
+$string['mycerts'] = 'Potrdila';
 
 /* Breadcrumb Style */
 $string['breadcrumbstyle'] = 'Breadcrumb style';

@@ -643,7 +643,14 @@ class theme_essential_core_renderer extends core_renderer
 
                 $usermenu .= html_writer::empty_tag('hr', array('class' => 'sep'));
             }
-
+            
+            // Check if badges are enabled.
+            if (!empty($CFG->enablebadges) && has_capability('moodle/badges:manageownbadges', $context)) {
+                $branchlabel = '<em><i class="fa fa-institution"></i>' . get_string('mycerts', 'theme_essential') . '</em>';
+                $branchurl = new moodle_url('/local/badgecerts/mycerts.php');
+                $usermenu .= html_writer::tag('li', html_writer::link($branchurl, $branchlabel));
+            }
+            
             // Output user grade links course sensitive, workaround for frontpage, selecting first enrolled course
             if ($course->id == 1) {
                 $hascourses = enrol_get_my_courses(NULL, 'visible DESC,id ASC', 1);
@@ -665,7 +672,7 @@ class theme_essential_core_renderer extends core_renderer
                 $branchurl = new moodle_url('/grade/report/user/index.php' , array('id' => $course->id, 'userid' => $USER->id));
                 $usermenu .= html_writer::tag('li', html_writer::link($branchurl, $branchlabel));
             }
-
+            
             // Check if badges are enabled.
             if (!empty($CFG->enablebadges) && has_capability('moodle/badges:manageownbadges', $context)) {
                 $branchlabel = '<em><i class="fa fa-certificate"></i>' . get_string('badges') . '</em>';
