@@ -200,7 +200,7 @@ body {
         position: relative;
         z-index: 2; }
     .block .header .commands {
-      display: none; }
+      float: right; }
   .block .content {
     padding: .5em 1em; }
 
