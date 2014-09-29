@@ -39,7 +39,7 @@ require_once(dirname(__FILE__) . '/includes/header.php'); ?>
             <div id="<?php echo $regionbsid ?>" class="span12">
                 <div class="row-fluid">
                     <?php if ($left) { ?>
-                    <section id="region-main" class="span9 pull-right">
+                    <section id="region-main" class="span9">
                         <?php } else { ?>
                         <section id="region-main" class="span9 desktop-first-column">
                             <?php } ?>
