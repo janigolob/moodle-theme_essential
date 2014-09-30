@@ -8,3 +8,28 @@
         content: "\f07c";
     }
 }
+
+
+.row-fluid {
+    
+    .span4 {
+        width: 23.0769%;
+    }
+    
+    .span8 {
+        width: 74.359%;
+    }
+}
+
+@media (max-width: 767px) {
+    .row-fluid {
+    
+        .span4 {
+            width: 100%;
+        }
+
+        .span8 {
+            width: 100%;
+        }
+    }
+}

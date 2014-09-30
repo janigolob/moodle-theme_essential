@@ -4,6 +4,16 @@
 .fa-f07c:before {
   content: "\f07c"; }
 
+.row-fluid .span4 {
+  width: 23.0769%; }
+.row-fluid .span8 {
+  width: 74.359%; }
+
+@media (max-width: 767px) {
+  .row-fluid .span4 {
+    width: 100%; }
+  .row-fluid .span8 {
+    width: 100%; } }
 #page-header {
   padding: 1.65em 0 0;
   margin: 0;
