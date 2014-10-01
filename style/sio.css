@@ -316,6 +316,8 @@ label, input, button, select, textarea {
   margin: 0; }
 #page-site-index #middle-blocks {
   display: none; }
+#page-site-index .row-fluid .span4 {
+  width: 31.6239%; }
 
 @media (max-width: 1100px) {
   #page-site-index .span9 {

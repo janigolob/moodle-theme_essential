@@ -17,6 +17,12 @@
     #middle-blocks {
         display: none;
     }
+    
+    .row-fluid {
+        .span4 {
+            width: 31.6239%;
+        }
+    }
 }
 
 @media (max-width: 1100px) {
