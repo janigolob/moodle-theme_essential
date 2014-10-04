@@ -160,13 +160,16 @@ body {
     padding: .5em 1em; }
   #page #page-content .course_category_tree .category {
     border-bottom-width: 1px; }
-    #page #page-content .course_category_tree .category .categoryname a .fa {
-      font-size: 100%;
-      width: auto; }
-    #page #page-content .course_category_tree .category .categoryname a .fa-f07c:before {
-      font-size: 100%; }
-    #page #page-content .course_category_tree .category .categoryname a:hover {
-      color: #fff; }
+    #page #page-content .course_category_tree .category .categoryname a {
+      text-align: left;
+      padding-left: 5px; }
+      #page #page-content .course_category_tree .category .categoryname a .fa {
+        font-size: 100%;
+        width: auto; }
+      #page #page-content .course_category_tree .category .categoryname a .fa-f07c:before {
+        font-size: 100%; }
+      #page #page-content .course_category_tree .category .categoryname a:hover {
+        color: #fff; }
   #page #page-content .menu a:hover span {
     color: #fff; }
 
