@@ -30,6 +30,28 @@ body {
     padding: 1em 0 0;
     background: none;
     
+    #marketing-spots {
+        a {
+            color: #3784BF;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+        .marketing-spot {
+            h5 {
+                color: #1B3D57;
+            }
+        }
+    }
+    
+    #marketing-buttons {
+        a.marketing-button {
+            background: #1B3D57;
+        }
+    }
+    
     #page-content {
         a {
             color: #3784BF;
