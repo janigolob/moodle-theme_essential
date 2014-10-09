@@ -127,6 +127,12 @@ body {
         .tree_item {
             padding-left: 0;
         }
+        
+        li {
+            ul {
+                padding-left: 12px;
+            }
+        }
     }
 }
 
@@ -189,7 +195,7 @@ body {
     }
 
     .content {
-        padding: .5em 1em;
+        padding: .5em .7em;
     }
 }
 

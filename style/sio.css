@@ -183,6 +183,8 @@ body {
 
 .block_settings .block_tree .tree_item {
   padding-left: 0; }
+.block_settings .block_tree li ul {
+  padding-left: 12px; }
 
 .block {
   padding: 0; }
@@ -224,7 +226,7 @@ body {
     .block .header .commands {
       float: right; }
   .block .content {
-    padding: .5em 1em; }
+    padding: .5em .7em; }
 
 @media (max-width: 767px) {
   #page #page-content .span9 {
