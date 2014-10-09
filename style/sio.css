@@ -86,6 +86,10 @@
           border-right: 8px solid transparent;
           left: 50%;
           margin: 13px 0 0 -8px; }
+  .navbar .pull-right .nav > li > a {
+    padding: 10px 5px; }
+  .navbar .navbar-inner .usermenu .dropdown a.dropdown-toggle {
+    padding: 10px 0 10px 5px; }
 
 #mm0 {
   -moz-appearance: none;

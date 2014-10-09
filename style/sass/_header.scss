@@ -112,6 +112,22 @@
             }
         }
     }
+    
+    .pull-right {
+        .nav {
+            & > li {
+                & > a {
+                    padding: 10px 5px;
+                }
+            }
+        }
+    }
+    
+    .navbar-inner {
+        .usermenu .dropdown a.dropdown-toggle {
+            padding: 10px 0 10px 5px;
+        }
+    }
 }
 
 #mm0 {
