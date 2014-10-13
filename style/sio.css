@@ -352,5 +352,9 @@ label, input, button, select, textarea {
 @media (max-width: 767px) {
   #page-course-view-weeks #page #page-content aside.span3 {
     width: 100%; } }
+tr.r0, tr.r1 {
+  border: 1px solid #ccc; }
+  tr.r0 td, tr.r1 td {
+    padding: 10px; }
 
 /*# sourceMappingURL=sio.css.map */
