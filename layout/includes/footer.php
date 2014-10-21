@@ -65,22 +65,22 @@ if (empty($PAGE->layout_options['nofooter'])) {
         <div class="container-fluid footer-row logos">
             <div class="logo">
                 <a href="#">
-                    <img src="http://sio.si/wp-content/themes/sio/images/arnes-logo.png" alt="Arnes logo">
+                    <img src="<?php echo $OUTPUT->pix_url('arnes-logo', 'theme');?>" alt="Arnes">
                 </a>
             </div>
             <div class="logo">
                 <a href="#">
-                    <img src="http://sio.si/wp-content/themes/sio/images/zavod-republike-slovenije-logo.png" alt="Arnes logo">
+                    <img src="<?php echo $OUTPUT->pix_url('zavod-republike-slovenije-logo', 'theme');?>" alt="Zavod republike slovenije">
                 </a>
             </div>
             <div class="logo">
                 <a href="#">
-                    <img src="http://sio.si/wp-content/themes/sio/images/ministrstvo-logo.png" alt="Arnes logo">
+                    <img src="<?php echo $OUTPUT->pix_url('ministrstvo-logo', 'theme');?>" alt="Ministrstvo">
                 </a>
             </div>
             <div class="logo">
                 <a href="#">
-                    <img src="http://sio.si/wp-content/themes/sio/images/nalozba-v-vaso-prihodnost-logo.png" alt="Arnes logo">
+                    <img src="<?php echo $OUTPUT->pix_url('nalozba-v-vaso-prihodnost-logo', 'theme');?>" alt="Naložba v vašo prihodnost">
                 </a>
             </div>
         </div>
