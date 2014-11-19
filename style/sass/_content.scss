@@ -104,7 +104,12 @@ body {
                                 font-size: 100%;
                             }
                         }
-
+                        
+                        span {
+                            width: 85%;
+                            float: right;
+                        }
+                        
                         &:hover {
                             color: #fff;
                         }

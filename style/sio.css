@@ -180,6 +180,9 @@ body {
         width: auto; }
       #page #page-content .course_category_tree .category .categoryname a .fa-f07c:before {
         font-size: 100%; }
+      #page #page-content .course_category_tree .category .categoryname a span {
+        width: 85%;
+        float: right; }
       #page #page-content .course_category_tree .category .categoryname a:hover {
         color: #fff; }
   #page #page-content .menu a:hover span {
