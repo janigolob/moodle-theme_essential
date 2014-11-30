@@ -340,13 +340,16 @@ label, input, button, select, textarea {
 #page-site-index .row-fluid .span4 {
   width: 31.6239%; }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   #page-site-index .span9 {
     width: 100%;
     margin-left: 0; }
   #page-site-index .span3 {
     width: 100%;
     margin: 0; } }
+@media all and (max-width: 1100px) and (min-width: 1000px) {
+  #page-site-index .span3 {
+    width: 260px; } }
 #page-course-view-weeks #page #page-content aside.span3 {
   width: 19.0769%;
   margin: 0;
