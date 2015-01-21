@@ -363,4 +363,7 @@ tr.r0, tr.r1 {
   tr.r0 td, tr.r1 td {
     padding: 10px; }
 
+.paging .current-page {
+  font-weight: 700; }
+
 /*# sourceMappingURL=sio.css.map */
