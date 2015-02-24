@@ -4,4 +4,8 @@ $(function() {
         prependTo: '#page-header nav .container-fluid',
         topOptionText: 'Menu'
     });
+
+    $('#page-mod-booking-report .paging')
+        .insertBefore('#fgroup_id_buttonar')
+        .css({"text-align": "right"});
 });
